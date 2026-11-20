@@ -23,7 +23,7 @@ class SleepTrackerAppTest {
             writer.println("01.10.25 23:30;02.10.25 09:30;GOOD");
             writer.println("02.10.25 14:00;02.10.25 15:00;BAD");
 
-            List<SleepAnalysisResult> results = SleepTrackerApp.analyzeFile( logFile.toString(), new SleepAnalyzer(),
+            List<SleepAnalysisResult> results = SleepTrackerApp.analyzeFile(logFile.toString(), new SleepAnalyzer(),
                     new Logger());
 
             //Вполнились все 7 функций анализа
